@@ -22,7 +22,11 @@ func main() {
 
 	//fmt.Printf() : String formatlama
 	//\n : alt satıra geçer.
-	fmt.Printf("Product Name: %s\n Allow Age : %d\n Discount : %f, Status : %t", productName, allowAge, discount, isActive)
+	// fmt.Printf("Product Name: %s\n Allow Age : %d\n Discount : %f, Status : %t", productName, allowAge, discount, isActive)
+	// fmt.Printf("Product Name: %s\n Allow Age : %o\n Discount : %f, Status : %t", productName, allowAge, discount, isActive)
+
+	//Default değer %v
+	fmt.Printf("Product Name: %v\n Allow Age : %v\n Discount : %v, Status : %v", productName, allowAge, discount, isActive)
 
 	// fmt.Println("Eğitimin ismi :", productName, reflect.TypeOf(productName))
 	// fmt.Println("Hangi yaştaki öğrenciler girecek : ", allowAge, reflect.TypeOf(allowAge))
