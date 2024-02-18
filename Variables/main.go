@@ -47,5 +47,6 @@ func main() {
 	fmt.Println(intValue)
 
 	//uint  : sadece positif değerler.
+	//byte : pozitif çok küçük değerler
 
 }
