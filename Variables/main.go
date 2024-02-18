@@ -18,6 +18,11 @@ func main() {
 	discount = 1.34
 	isActive = false
 
+	//Education Detail : Tek bir print içerisine birden fazla değişken yazdırabilirsin.
+	//fmt.Println(productName, " ", allowAge, " ", discount, " ", isActive)
+
+	//
+
 	fmt.Println("Eğitimin ismi :", productName, reflect.TypeOf(productName))
 	fmt.Println("Hangi yaştaki öğrenciler girecek : ", allowAge, reflect.TypeOf(allowAge))
 	fmt.Println("indirim : ", discount, reflect.TypeOf(discount))
