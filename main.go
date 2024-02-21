@@ -15,5 +15,4 @@ func main() {
 	fmt.Println("Ana sayfa")
 
 	// jwt.HS256("IDCARTNUMBER")
-
 }
