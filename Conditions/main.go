@@ -1,15 +1,20 @@
 package main
 
-import "fmt"
+import (
+	nestedIf "oneVideoModule/Conditions/NestedIf"
+)
 
 func main() {
-	var age int = 20
+	// var age int = 20
 
-	if age >= 18 {
-		fmt.Println("Bu uçağa binebilirsiniz biletin yoksa lütfen bilet alınız")
-	} else if age >= 16 && age < 18 {
-		fmt.Println("Uçağa binebilirsin fakat bilet alamazsın")
-	} else {
-		fmt.Println("Büyüde gel")
-	}
+	// if age >= 18 {
+	// 	fmt.Println("Bu uçağa binebilirsiniz biletin yoksa lütfen bilet alınız")
+	// } else if age >= 16 && age < 18 {
+	// 	fmt.Println("Uçağa binebilirsin fakat bilet alamazsın")
+	// } else {
+	// 	fmt.Println("Büyüde gel")
+	// }
+	nestedIf.NestedIf()
+
+	//bank.Bank()
 }
