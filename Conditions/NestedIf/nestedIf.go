@@ -4,12 +4,12 @@ import (
 	"fmt"
 )
 
-func NestedIf() {
+func ATM() {
 	var accountBalance float64 = 1000.0
 	fmt.Println("Bankamıza hoşgeldiniz")
 	fmt.Println("Ne yapmak istersiniz")
 	fmt.Println("1. Bakiye kontrol")
-	fmt.Println("2. Depositler")
+	fmt.Println("2. Para yatırma")
 	fmt.Println("3. Para çekme")
 	fmt.Println("4. kartı al")
 
@@ -20,7 +20,7 @@ func NestedIf() {
 	if choice == 1 {
 		fmt.Println("Your balance is", accountBalance)
 	} else if choice == 2 {
-		fmt.Print("depozitin :")
+		fmt.Print("Para tutarı :")
 		var depositAmount float64
 		fmt.Scan(&depositAmount)
 
@@ -51,6 +51,6 @@ func NestedIf() {
 		accountBalance -= float64(withdrawalAmount)
 		fmt.Println("Balance Updated! new amount : ", accountBalance)
 	} else {
-		fmt.Println("Good bye")
+		fmt.Println("See you")
 	}
 }
