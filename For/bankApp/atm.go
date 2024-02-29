@@ -1,8 +1,8 @@
-package bankapp
+package atm
 
 import "fmt"
 
-func atmCode() {
+func AtmCode() {
 	var accountBalance = 1000.0
 
 	for i := 0; i < 200; i++ {

@@ -1,4 +1,6 @@
-> go mod init name : projemizi modül yapar.
+> go mod init name : projemizi modül yapar. 
+modül sayesindeki projenizdeki paketlere ulaşırız.
+modül oluştururken kök klasöründe olmamız lazım.
 Biz projemizde go geomu kullandık githubda go.mod yazdık ve kodları bizim projemizdeki go.moda uyguladık.
 terminalden github.com/twpayne/go-geom yazdığımızda ki bu modülün ismi geom modülünü kullanabiliriz.
 https://github.com/twpayne/go-geom/blob/master/go.mod

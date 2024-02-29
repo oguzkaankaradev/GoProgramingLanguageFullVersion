@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	atm "oneVideoModule/For/BankApp"
+)
 
 func main() {
 	// index := 1
@@ -34,5 +37,7 @@ func main() {
 		fmt.Println(users[index])
 		index++
 	}
+
+	atm.AtmCode()
 
 }
