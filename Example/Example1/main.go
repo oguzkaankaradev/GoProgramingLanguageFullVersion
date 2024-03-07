@@ -28,20 +28,40 @@ func main() {
 		If income is above 20,000 gelir, the tax rate is 20%.
 	*/
 
-	var gelir float64
-	fmt.Scan(&gelir)
+	// var gelir float64
+	// fmt.Scan(&gelir)
 
-	if gelir <= 10000 {
-		var calculates float64 = gelir * 10 / 100
-		fmt.Println(calculates)
+	// if gelir <= 10000 {
+	// 	var calculates float64 = gelir * 10 / 100
+	// 	fmt.Println(calculates)
 
-	} else if gelir < 20000 || gelir > 10000 {
-		var calculates float64 = gelir * 10 / 100
-		fmt.Println(calculates)
+	// } else if gelir < 20000 || gelir > 10000 {
+	// 	var calculates float64 = gelir * 10 / 100
+	// 	fmt.Println(calculates)
 
+	// } else {
+	// 	fmt.Println("gardaş % 20 vergiyi get maliyeye öde")
+
+	// }
+
+	- Write a nested if statement that determines the grade for a given score.
+	   For example, if score is greater than or equal to 90, the grade is "A".
+	   If score is between 80 and 89, the grade is "B". If score is between 70 and 79, the grade is "C".
+	   If score is between 60 and 69, the grade is "D". If score is less than 60, the grade is "F".
+
+	var score int
+	fmt.Scan(&score)
+
+	if score >= 90 {
+
+		fmt.Println("The grade is A")
+	} else if score >= 80 || score <= 89 {
+		fmt.Println("The grade is B")
+	} else if score >= 70 || score <= 79 {
+		fmt.Println("The grade is C")
+	} else if score >= 60 || score <= 69 {
+		fmt.Println("The grade is D")
 	} else {
-		fmt.Println("gardaş % 20 vergiyi get maliyeye öde")
-
+		fmt.Println("The grade is F")
 	}
-
 }
