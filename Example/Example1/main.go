@@ -44,10 +44,10 @@ func main() {
 
 	// }
 
-	- Write a nested if statement that determines the grade for a given score.
-	   For example, if score is greater than or equal to 90, the grade is "A".
-	   If score is between 80 and 89, the grade is "B". If score is between 70 and 79, the grade is "C".
-	   If score is between 60 and 69, the grade is "D". If score is less than 60, the grade is "F".
+	// - Write a nested if statement that determines the grade for a given score.
+	//    For example, if score is greater than or equal to 90, the grade is "A".
+	//    If score is between 80 and 89, the grade is "B". If score is between 70 and 79, the grade is "C".
+	//    If score is between 60 and 69, the grade is "D". If score is less than 60, the grade is "F".
 
 	var score int
 	fmt.Scan(&score)

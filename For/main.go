@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	atm "oneVideoModule/For/BankApp"
 )
 
 func main() {
@@ -31,13 +30,22 @@ func main() {
 
 	//example 2 : array slice
 	//len = toplama işlemini yapıyor.
-	index := 0
-	var users = []string{"ali", "ahmet", "tgffg", "tyh", "uku", "oıl", "dfgtry", "ahmfet", "ytj", "ahmet", "ghjuj", "fghy", "getg"}
-	for index < len(users) {
-		fmt.Println(users[index])
-		index++
-	}
+	// index := 0
+	// var users = []string{"ali", "ahmet", "tgffg", "tyh", "uku", "oıl", "dfgtry", "ahmfet", "ytj", "ahmet", "ghjuj", "fghy", "getg"}
+	// for index < len(users) {
+	// 	fmt.Println(users[index])
+	// 	index++
+	// }
 
-	atm.AtmCode()
+	// atm.AtmCode()
+
+	//Golang To Dotnet
+
+	var length int
+	fmt.Scan(&length)
+	var hediyeAlan = "500. kişisiniz hediyeniz."
+	for customer := 0; customer < length; customer++ {
+		fmt.Println(hediyeAlan)
+	}
 
 }
