@@ -9,7 +9,7 @@ func main() {
 	//first method
 	var productName string
 	var allowAge int
-	var discount float32 //float64
+	var discount float32 //float64, virgüllü
 	var isActive bool    //true veya false
 
 	productName = "goLang"
@@ -21,6 +21,7 @@ func main() {
 	//fmt.Println(productName, " ", allowAge, " ", discount, " ", isActive)
 
 	//fmt.Printf() : String formatlama
+	//fmt.Println("dbckajvjbdfl mafmkergmk mdpfmerpbmsmfb rgpdsfbmlm product name : kolsaati, price : 500, indiirm : 50, isactive : true")
 	//\n : alt satıra geçer.
 	// fmt.Printf("Product Name: %s\n Allow Age : %d\n Discount : %f, Status : %t", productName, allowAge, discount, isActive)
 	// fmt.Printf("Product Name: %s\n Allow Age : %o\n Discount : %f, Status : %t", productName, allowAge, discount, isActive)

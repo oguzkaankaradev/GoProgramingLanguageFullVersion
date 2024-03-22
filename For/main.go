@@ -5,13 +5,16 @@ import (
 )
 
 func main() {
+
+	// var index int
+	// index = 1
 	// index := 1
 
 	// for index <= 10 {
 	// 	fmt.Println(index)
 
 	// 	//index = index + 1
-	// 	//index++
+	// 	index++
 	// }
 
 	//ikinci yöntem
@@ -21,12 +24,13 @@ func main() {
 
 	//example toplamlarını yazdır.
 
-	// total := 0
-	// for index := 1; index <= 10; index++ {
-	// 	//total = total + index
-	// 	total += index
-	// }
-	// fmt.Println(total)
+	total := 0
+	for index := 1; index <= 10; index++ {
+		total = total + index
+
+		// total += index
+	}
+	fmt.Println(total)
 
 	//example 2 : array slice
 	//len = toplama işlemini yapıyor.
