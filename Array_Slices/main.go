@@ -50,9 +50,9 @@ func main() {
 
 	fmt.Println(kids) //tamamı yazıldı
 
-	fmt.Println(jordans)      //tamamı yazıldı
-	fmt.Println(jordans[0:4]) //kardeşim bana jordan 3 e kadar yazdır. bu veritabanından ayarla
-	fmt.Println(jordans[1:4]) //kardeşim bana jordan 3 e kadar yazdır. bu veritabanından ayarla
+	// fmt.Println(jordans)      //tamamı yazıldı
+	// fmt.Println(jordans[0:4]) //kardeşim bana jordan 3 e kadar yazdır. bu veritabanından ayarla
+	// fmt.Println(jordans[1:4]) //kardeşim bana jordan 3 e kadar yazdır. bu veritabanından ayarla
 
 	// var gender = [3]string{"erkek", "kadın", "çocuk"}
 
