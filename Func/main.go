@@ -21,27 +21,33 @@ func main() {
 	//add(34567890, 567890)
 
 	//ikinci yöntem çağırma
-	total := add(34567890, 567890)
+	// total := add(34567890, 567890)
+
+	// fmt.Println(total)
+
+	total, difference, carp := calculation(234234, 34234)
 
 	fmt.Println(total)
+	fmt.Println(difference)
+	fmt.Println(carp)
 
 }
 
 //basit bir fonksiyon tanımlayalım,
 //fonksiyonun amacı gönderilen iki değeri toplamak olsun.
 
-//birinci yöntem
+// birinci yöntem
 // func add(x int, y int){
 // 		fmt.Println(x + y)
 
 // }
 
 //ikinci yöntem
-func add(x int, y int) int {
-	//func un içerisindeki değerleri topla ekrana yazır.
+// func add(x int, y int) int {
+// 	//func un içerisindeki değerleri topla ekrana yazır.
 
-	return x + y
-}
+// 	return x + y
+// }
 
 /*
 //üye girişi
@@ -56,3 +62,10 @@ func Crypt() {
 	// yeni şifre = akfçjaevnkxzçnafnwer35745tırowefsmdlvxdfbgwh5o
 }
 */
+
+//üçüncü yöntem
+//Goda bir fonksiyon birden fazla değer dönebilir. değerden kasıt add fonksiyonunda parantezden sonraki int tir.
+
+func calculation(a int, b int) (int, int, int) {
+	return a + b, a - b, a * b
+}
