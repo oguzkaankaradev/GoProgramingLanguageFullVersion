@@ -10,7 +10,8 @@ import "fmt"
 //önemli not!!!!!!!!! print ln yani birinci  yöntemi biz mainde çağırdığımızda direkt ekrana yazdırır.
 //fakat ikinci yöntemi yani return ile çağırdığımızda biz ne zaman istersek o zaman ekrana yazdırır.
 //Goda bir fonksiyon birden fazla değer dönebilir. değerden kasıt add fonksiyonunda parantezden sonraki int tir.
-
+// eğer kullanmayacağımız bir tip varsa _(alttire) yazacağız
+// ... ne kadar değer göndereceğimizi belli değilse kullanıyoruz.
 func main() {
 	//fmt.Print()
 
@@ -25,12 +26,18 @@ func main() {
 
 	// fmt.Println(total)
 
-	total, difference, carp := calculation(234234, 34234)
+	// total, difference, multiple := calculation(234234, 34234)
 
-	fmt.Println(total)
-	fmt.Println(difference)
-	fmt.Println(carp)
+	// fmt.Println(total)
+	// fmt.Println(difference)
+	// fmt.Println(multiple)
 
+	// var numbers = []int{1, 2, 3, 4, 5, 6, 6543, 678, 987654, 345678}
+	// fmt.Println(sum(numbers))
+
+	// fmt.Println(sum(3, 4, 5))
+
+	fmt.Println(sum(3, 4, 5, 3456789, 234567890, 34567890, 34567890, 456789))
 }
 
 //basit bir fonksiyon tanımlayalım,
@@ -66,6 +73,30 @@ func Crypt() {
 //üçüncü yöntem
 //Goda bir fonksiyon birden fazla değer dönebilir. değerden kasıt add fonksiyonunda parantezden sonraki int tir.
 
-func calculation(a int, b int) (int, int, int) {
-	return a + b, a - b, a * b
+// func calculation(a int, b int) (int, int, int) {
+// 	return a + b, a - b, a * b
+// }
+
+//4. kullanım arraylerle yaptık.
+// func sum(numbers []int) int {
+// 	sum := 0
+// 	for _, value := range numbers {
+// 		sum += value
+
+// 	}
+// 	return sum
+// }
+
+//
+// func sum(x int, y int, z int) int {
+// 	return x + y + z
+// }
+
+func sum(numbers ...int) int {
+
+	sum := 0
+	for _, value := range numbers {
+		sum += value
+	}
+	return sum
 }
