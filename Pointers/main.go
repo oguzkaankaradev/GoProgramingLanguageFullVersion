@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 //pointerlar birçok dilde vardır, java ve c# ta referans tip olarak karşımıza çıkmaktadır.
 //c# ve java daha üst seviye diller olduğu için direkt olarak pointer diye kullanamıyoruz.
@@ -9,6 +11,13 @@ import "fmt"
 // Pointerlerde bir değişkendir, ancak görevleri adres tutmaktır.
 //adres değerindeki değeri almak istiyorsak pointer değişkenimizin başıona * koymamız yeterli.
 
+//int bool gibi veritipleri golangda ilkel veri tipleri olarak geçmektedir. yani değer tiplidir. Fonksiyonla değiştirmek istiyorsak adres değeri üzerinden müdahalede bulunlıyız.
+//array ve sliceler referans tiplidir, zaten kendileri pointerdir. fonksiyonlar ile direkt değerini değiştirebiliriz.
+
+//biz bir değişkeni pointer ile kullanıyorsak onun referansını kullanıyoruz.
+// var a int = 10, 10 bizim referansımız. a da bizim değerimiz.
+
+// referans == adres.
 func main() {
 	// var a int
 
@@ -41,23 +50,34 @@ func main() {
 	// *p = 20
 
 	// fmt.Println(a, b)
-	var a int = 10
-	fmt.Println(a) //10
+	// var a int = 10
+	// fmt.Println(a) //10
 
-	add12(a)
-	fmt.Println(a)
+	// add12(a)
+	// fmt.Println(a)
 
-	add12pointer(&a) //adres bilgisini
-	//fonksiyonlarımızın kendi değişkenlerimiz üzerinde modifiye yapmasını istiyorsak pointerları kullanacağız.
-	fmt.Println(a)
+	// add12pointer(&a) //adres bilgisini
+	// //fonksiyonlarımızın kendi değişkenlerimiz üzerinde modifiye yapmasını istiyorsak pointerları kullanacağız.
+	// fmt.Println(a)
+
+	//aray ve slicelerde örnek.
+	var numbers = []int{1, 2, 3, 4, 5, 6}
+	fmt.Println(numbers)
+
+	changeIndex(numbers)
+	fmt.Println(numbers)
 }
 
 //biz add12 fonksiyonuna a yı gönderirken anın sadece değerini gönderiyoruz.
-func add12(x int) {
-	x = x + 12
-	//yeni x imizin değeri 22
-}
+// func add12(x int) {
+// 	x = x + 12
+// 	//yeni x imizin değeri 22
+// }
 
-func add12pointer(x *int) {
-	*x = *x + 12
+// func add12pointer(x *int) {
+// 	*x = *x + 12
+// }
+
+func changeIndex(tasiyiciSlice []int) {
+	tasiyiciSlice[0] = 1000
 }
