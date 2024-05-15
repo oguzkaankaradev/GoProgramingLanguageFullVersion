@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 //pointerlar birçok dilde vardır, java ve c# ta referans tip olarak karşımıza çıkmaktadır.
 //c# ve java daha üst seviye diller olduğu için direkt olarak pointer diye kullanamıyoruz.
@@ -11,7 +9,7 @@ import (
 // Pointerlerde bir değişkendir, ancak görevleri adres tutmaktır.
 //adres değerindeki değeri almak istiyorsak pointer değişkenimizin başıona * koymamız yeterli.
 
-//int bool gibi veritipleri golangda ilkel veri tipleri olarak geçmektedir. yani değer tiplidir. Fonksiyonla değiştirmek istiyorsak adres değeri üzerinden müdahalede bulunlıyız.
+//int bool string gibi veritipleri golangda ilkel veri tipleri olarak geçmektedir. yani değer tiplidir. Fonksiyonla değiştirmek istiyorsak adres değeri üzerinden müdahalede bulunlıyız.
 //array ve sliceler referans tiplidir, zaten kendileri pointerdir. fonksiyonlar ile direkt değerini değiştirebiliriz.
 
 //biz bir değişkeni pointer ile kullanıyorsak onun referansını kullanıyoruz.
@@ -61,11 +59,18 @@ func main() {
 	// fmt.Println(a)
 
 	//aray ve slicelerde örnek.
-	var numbers = []int{1, 2, 3, 4, 5, 6}
-	fmt.Println(numbers)
+	// var numbers = []int{1, 2, 3, 4, 5, 6}
+	// fmt.Println(numbers)
 
-	changeIndex(numbers)
-	fmt.Println(numbers)
+	// changeIndex(numbers)
+	// fmt.Println(numbers)
+
+	var stringExample string
+	stringExample = "Ben bir denemyim amacım : "
+	fmt.Println(stringExample)
+
+	stringChange(&stringExample)
+	fmt.Println(stringExample)
 }
 
 //biz add12 fonksiyonuna a yı gönderirken anın sadece değerini gönderiyoruz.
@@ -78,6 +83,11 @@ func main() {
 // 	*x = *x + 12
 // }
 
-func changeIndex(tasiyiciSlice []int) {
-	tasiyiciSlice[0] = 1000
+// func changeIndex(tasiyiciSlice []int) {
+// 	tasiyiciSlice[0] = 1000
+// }
+
+//Ödev,
+func stringChange(tasiyiciString *string) {
+	*tasiyiciString = *tasiyiciString + "Değer tiplimi referans tiplimi öğrenmek."
 }
