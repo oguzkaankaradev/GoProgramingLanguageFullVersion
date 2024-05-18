@@ -14,6 +14,7 @@ func main() {
 	var customer1 = Customer{id: 1, name: "oraz murat", lastName: "türkmenistan", age: 12, address: Address{city: "istanbul", street: "kavakpınar"}}
 
 	//bir sutructdaki değişkenin değerini değiştirmek için bu şekilde kullanacağız.
+
 	customer1.age = 18
 
 	// fmt.Println(customer1)
