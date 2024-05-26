@@ -53,6 +53,9 @@ type IShipibleProduct interface {
 	//contract tır. bir sçzleşmedir.
 
 	shipingCost() int
+
+	// var a string
+
 }
 
 // kitabın kargo maliyetini hesaplıyor
