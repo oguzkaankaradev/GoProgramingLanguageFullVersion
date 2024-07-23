@@ -1,10 +1,10 @@
-package main
+package Variable
 
 import (
 	"fmt"
 )
 
-func main() {
+func Topic() {
 
 	//first method
 	var productName string
